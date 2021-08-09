@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+      android:id="@+id/base_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".MainActivity">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="We've detected the following demos available for download that aren't present on your device. Please select the demos you would like to install and then press the Install button" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/downloadable_demos_list"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:padding="4dp"
+          android:layout_weight="7"/>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.5" />
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/install_button"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_weight="1.25"
+          android:text="Install Demos" />
+
+        <TextView
+          android:id="@+id/skip_button"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="Close Installer" />
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

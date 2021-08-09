@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/card_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="16dp"
+      tools:context=".MainActivity">
+
+      <LinearLayout
+        android:id="@+id/base_layout"
+        android:background="@drawable/gradient_orange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:id="@+id/overview_layout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="10">
+
+          <LinearLayout
+            android:id="@+id/lhs_layout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <ImageView
+              android:id="@+id/group_icon"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:src="@drawable/ic_scanner" />
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:id="@+id/rhs_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_weight="7">
+
+            <TextView
+              android:id="@+id/group_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Scanning"
+              android:textColor="#FFF"
+              android:textSize="14pt"
+              android:textStyle="bold"
+              android:fontFamily="sans-serif"/>
+
+            <TextView
+              android:id="@+id/group_desc"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Demonstrate scanning capabilities, including DataWedge and NGSS"
+              android:textColor="#FFF"
+              android:textSize="8pt"
+              android:fontFamily="sans-serif-light"/>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+          android:id="@+id/expand_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_expand_more"/>
+
+        <LinearLayout
+          android:id="@+id/layout_app_row_holder"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="16dp"
+          android:orientation="vertical"
+          android:visibility="gone"
+          tools:visibility="visible">
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

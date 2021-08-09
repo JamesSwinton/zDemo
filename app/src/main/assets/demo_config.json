@@ -1,0 +1,57 @@
+{
+  "demo_configs": [
+    {
+      "category": "Scan",
+      "category_description": "Demonstrate scanning capabilities such as barcode & document capture",
+      "packages_to_display": [
+        "com.symbol.datawedge",
+        "com.zebra.jamesswinton.anchorbarcodesample"
+      ]
+    },
+    {
+      "category": "Print",
+      "category_description": "Promote our EMC functionality that makes printing simple",
+      "packages_to_display": [
+        "com.zebra.jamesswinton.zebrapdfprintv2"
+      ]
+    },
+    {
+      "category": "Utils",
+      "category_description": "Applications created for customers to aid their workflow, such as Stage Now",
+      "packages_to_display": [
+        "com.symbol.tool.stagenow",
+        "com.symbol.batterymanager",
+        "com.symbol.rxloggerutility"
+      ]
+    },
+    {
+      "category": "Bluetooth",
+      "category_description": "Highlight our BT functionality, including BT Manager",
+      "packages_to_display": [
+        "com.symbol.btapp"
+      ]
+    },
+    {
+      "category": "NFC",
+      "category_description": "Showcase NFC technology on our devices",
+      "packages_to_display": [
+        "com.zebra.ses.nfcwriter"
+      ]
+    },
+    {
+      "category": "Third Party",
+      "category_description": "Apps / SDKs from 3rd party developers",
+      "packages_to_display": [
+        "com.google.mlkit.vision.demo",
+        "com.zebra.jamesswinton.boxsizedemo"
+      ]
+    },
+    {
+      "category": "Misc",
+      "category_description": "A collection of miscellaneous demos",
+      "packages_to_display": [
+        "com.zebra.jamesswinton.healthcareworkflowdemo"
+      ]
+    }
+  ]
+}

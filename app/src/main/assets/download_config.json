@@ -1,0 +1,39 @@
+{
+  "downloadable_demos": [
+    {
+      "name": "Anchor Barcode Sample",
+      "category": "Scan",
+      "package_name": "com.zebra.jamesswinton.anchorbarcodesample",
+      "description": "Demonstrates document capture with Next Generation Simul Scan",
+      "download_location": "https://downloads.jamesswinton.com/FeatureDemoApps/ng_simulscan_doc_capture.apk"
+    },
+    {
+      "name": "Zebra PDF Print",
+      "category": "Print",
+      "package_name": "com.zebra.jamesswinton.zebrapdfprintv2",
+      "description": "Preview & print PDF files on Zebra printers with ease using PDFDirect & Bluetooth",
+      "download_location": "https://downloads.jamesswinton.com/FeatureDemoApps/zebra_pdf_print.apk"
+    },
+    {
+      "name": "Healthcare Workflow Demo",
+      "category": "Misc",
+      "package_name": "com.zebra.jamesswinton.healthcareworkflowdemo",
+      "description": "Print patient details onto a Zebra wristband printer then scan the patients wristband to generate & print a sample label using a Zebra Label printer",
+      "download_location": "https://downloads.jamesswinton.com/FeatureDemoApps/healthcare_workflow_demo.apk"
+    },
+    {
+      "name": "Box Size Demo",
+      "category": "Third Party",
+      "package_name": "com.zebra.jamesswinton.boxsizedemo",
+      "description": "Measure boxes using the device IMU with BoxSize SDK",
+      "download_location": "https://downloads.jamesswinton.com/FeatureDemoApps/box_size_demo.apk"
+    },
+    {
+      "name": "NFC Writer",
+      "category": "NFC",
+      "package_name": "com.zebra.ses.nfcwriter",
+      "description": "Generate & write NFC tags with staging data to be used with StageNow (Credit: Gary Crean)",
+      "download_location": "https://downloads.jamesswinton.com/FeatureDemoApps/nfc_writer.apk"
+    }
+  ]
+}
