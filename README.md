@@ -2,9 +2,7 @@
   
 # Preview  
   
-![Preview](https://downloads.jamesswinton.com/apks/Demos/zDemo/zdemo-1.png)  
-![Preview](https://downloads.jamesswinton.com/apks/Demos/zDemo/zdemo-2.png)
-![Preview](https://downloads.jamesswinton.com/apks/Demos/zDemo/zdemo-3.png?)
+![Preview](https://downloads.jamesswinton.com/apks/Demos/zDemo/zdemo-2.png)    ![Preview](https://downloads.jamesswinton.com/apks/Demos/zDemo/zdemo-4.png)
 
 # Description  
 Categorises & displays a configurable list of applications, designed to demonstrate all the capabilities of zebra devices from a single location. Additionally, externally hosted applications can be downloaded & installed from within the application. See setup instructions for more info.  
