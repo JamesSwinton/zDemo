@@ -16,7 +16,7 @@ download_config.json is used to define the applications to expose for download w
   
 Please see below for examples of both of these config files. All parameters are required.  
   
-Asset files will be copied to /sdcard/android/data/com.zebra.jamesswinton.zdemo/files/ unless already present, so make sure to push config updates to this folder or update the assets directly and delete the old copies.  
+Asset files will be copied to the following path: */enterprise/usr*, unless already present, so make sure to push config updates to this folder or update the assets directly and delete the old copies.  
   
 Note: An application restart is required to consume new config files.  
 
