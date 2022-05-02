@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.databinding.DataBindingUtil;
 
@@ -47,6 +48,8 @@ import java.util.concurrent.TimeUnit;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    private final static String TAG = "SplashScreenActivity";
+
     // UI
     private ActivitySplashScreenBinding mDataBinding;
 
@@ -65,7 +68,15 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (App.getInstance().isMainActivityRunning()) {
+            Log.d(TAG, "App is already running, skipping initialization and go directly to MainActivity");
+            startActivityIfNeeded(new Intent(SplashScreenActivity.this, MainActivity.class), 0);
+            return;
+        }
+
         mDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_splash_screen);
+
         Glide.with(this)
                 .load(R.raw.logo)
                 .listener(new RequestListener<Drawable>() {
@@ -153,8 +164,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private void onConfigLoaded() {
         // Set Objs
-        App.mDemoConfigs = mDemoConfigs;
-        App.mDownloadableDemos = mDownloadableDemos;
+        App.getInstance().setDemoConfigs(mDemoConfigs);
+        App.getInstance().setDownloadableDemos(mDownloadableDemos);
 
         // Calculate Splash Screen delay (if we do our calcs too quickly add a delay for a smoother ux)
         long diff = (TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis() - mStartTime));

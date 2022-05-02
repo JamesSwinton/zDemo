@@ -54,7 +54,7 @@ public class InstallDemosActivity extends AppCompatActivity implements OnDemoChe
     mDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_install_demos);
 
     // Init Adapter
-    mInstallDemosAdapter = new InstallDemosAdapter(this, App.mDownloadableDemos, this);
+    mInstallDemosAdapter = new InstallDemosAdapter(this, App.getInstance().getDownloadableDemos(), this);
     mDataBinding.downloadableDemosList.setLayoutManager(new LinearLayoutManager(this));
     mDataBinding.downloadableDemosList.setAdapter(mInstallDemosAdapter);
 
@@ -137,7 +137,7 @@ public class InstallDemosActivity extends AppCompatActivity implements OnDemoChe
   @Override
   public void profileApplied() {
     // Update App List
-    ListIterator<DownloadableDemo> demoIterator = App.mDownloadableDemos.getDownloadableDemos().listIterator();
+    ListIterator<DownloadableDemo> demoIterator = App.getInstance().getDownloadableDemos().getDownloadableDemos().listIterator();
     while(demoIterator.hasNext()){
       if (FileUtils.isPackageInstalled(this, demoIterator.next().getPackageName())) {
         demoIterator.remove();
